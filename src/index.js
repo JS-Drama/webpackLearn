@@ -1,4 +1,5 @@
 import _ from 'lodash';
+import $ from 'jquery';
 import printMe from './print.js';
 
 function component() {
@@ -17,3 +18,6 @@ function component() {
 }
 
 document.body.appendChild(component());
+$(document).ready(function() {
+    console.log($("div"));
+})
