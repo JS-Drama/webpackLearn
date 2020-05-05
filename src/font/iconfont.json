@@ -1,0 +1,44 @@
+{
+  "id": "1793237",
+  "name": "A03-帖子分享页面",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "663236",
+      "name": "good",
+      "font_class": "i-good",
+      "unicode": "e61b",
+      "unicode_decimal": 58907
+    },
+    {
+      "icon_id": "11391522",
+      "name": "分享",
+      "font_class": "fenxiang",
+      "unicode": "e639",
+      "unicode_decimal": 58937
+    },
+    {
+      "icon_id": "14401616",
+      "name": "arrow-ios-back",
+      "font_class": "arrow-ios-back",
+      "unicode": "e653",
+      "unicode_decimal": 58963
+    },
+    {
+      "icon_id": "14401630",
+      "name": "arrow-ios-downward",
+      "font_class": "arrow-ios-downward",
+      "unicode": "e654",
+      "unicode_decimal": 58964
+    },
+    {
+      "icon_id": "14401659",
+      "name": "close",
+      "font_class": "close",
+      "unicode": "e65d",
+      "unicode_decimal": 58973
+    }
+  ]
+}
