@@ -1,12 +1,18 @@
 /*
  * @Author: JS-Drama
  * @Date: 2020-05-07 15:04:10
- * @LastEditTime: 2020-05-07 16:39:12
+ * @LastEditTime: 2020-05-07 17:19:34
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \pj-h5-webd:\myCode\webpackLearn\src\index.js
  */
-import { cube } from './math.js';
+import {
+    cube
+} from './math.js';
+
+if (process.env.NODE_ENV !== 'production') {
+    console.log('Looks like we are in development mode!');
+}
 
 function component() {
     var element = document.createElement('pre');
