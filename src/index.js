@@ -1,21 +1,32 @@
 /*
  * @Author: JS-Drama
  * @Date: 2020-05-07 15:04:10
- * @LastEditTime: 2020-05-07 17:59:48
+ * @LastEditTime: 2020-05-07 18:12:59
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \pj-h5-webd:\myCode\webpackLearn\src\index.js
  */
-function getComponent() {
-    return import( /* webpackChunkName: "lodash" */ 'lodash').then(_ => {
-        var element = document.createElement('div');
+import _ from 'lodash';
 
-        element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+function component() {
+    var element = document.createElement('div');
+    var button = document.createElement('button');
+    var br = document.createElement('br');
+    button.innerHTML = 'Click me and look at the console!';
+    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+    element.appendChild(br);
+    element.appendChild(button);
 
-        return element;
-
-    }).catch(error => 'An error occurred while loading the component');
+    // Note that because a network request is involved, some indication
+    // of loading would need to be shown in a production-level site/app.
+    button.addEventListener("click", function () {
+        // es6 草案中的语法， 用jsonp实现动态加载文件, 需要插件@babel/plugin-syntax-dynamic-import
+        import("./print").then(module => {
+            // promise对象
+            var print = module.default;
+            print();
+        });
+    });
+    return element;
 }
-getComponent().then(component => {
-    document.body.appendChild(component);
-})
+document.body.appendChild(component());
