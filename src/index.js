@@ -1,7 +1,7 @@
 /*
  * @Author: JS-Drama
  * @Date: 2020-05-07 15:04:10
- * @LastEditTime: 2020-05-07 18:12:59
+ * @LastEditTime: 2020-05-07 18:38:28
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \pj-h5-webd:\myCode\webpackLearn\src\index.js
@@ -21,7 +21,7 @@ function component() {
     // of loading would need to be shown in a production-level site/app.
     button.addEventListener("click", function () {
         // es6 草案中的语法， 用jsonp实现动态加载文件, 需要插件@babel/plugin-syntax-dynamic-import
-        import("./print").then(module => {
+        import( /* webpackChunkName: "print" */ './print').then(function (module) {
             // promise对象
             var print = module.default;
             print();
