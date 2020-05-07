@@ -1,7 +1,7 @@
 /*
  * @Author: JS-Drama
  * @Date: 2020-05-07 15:04:10
- * @LastEditTime: 2020-05-07 15:30:05
+ * @LastEditTime: 2020-05-07 16:41:42
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \pj-h5-webd:\myCode\webpackLearn\webpack.config.js
@@ -40,5 +40,6 @@ module.exports = {
         filename: '[name].bundle.js',
         path: path.resolve(__dirname, 'dist'),
         publicPath: '/'
-    }
+    },
+    mode: "production" // 开启打包压缩
 };
