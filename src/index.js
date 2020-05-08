@@ -1,19 +1,19 @@
 /*
  * @Author: JS-Drama
  * @Date: 2020-05-07 15:04:10
- * @LastEditTime: 2020-05-07 18:38:28
+ * @LastEditTime: 2020-05-08 10:07:35
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \pj-h5-webd:\myCode\webpackLearn\src\index.js
  */
-import _ from 'lodash';
+// import _ from 'lodash';
 
 function component() {
     var element = document.createElement('div');
     var button = document.createElement('button');
     var br = document.createElement('br');
     button.innerHTML = 'Click me and look at the console!';
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+    // element.innerHTML = _.join(['Hello', 'webpack'], ' ');
     element.appendChild(br);
     element.appendChild(button);
 
